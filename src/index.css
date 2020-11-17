@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav{
+  background-color: red;
+  color: white;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.nav-content{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.brand-name{
+  flex: 1;
+  font-size: 1.7rem;
+
+}
+ .navlinks, .navbar-mobile{
+  margin-bottom: 0;
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.nav-content ul li{
+  list-style: none;
+  font-size: 1rem;
+}
+.nav-content ul li a{
+  color: white;
+}
+.hamburger{
+  display: none;
+}
+.hamburger:focus{
+  outline: none;
+}
+a::after{
+  background-color: tomato;
+}
+@media(max-width: 700px){
+  .nav-content{
+    flex: 1;
+  }
+  .brand-name{
+    font-size: 1.5rem;
+  }
+
+  .hamburger{
+    display: block;
+    color: white;
+    width: 50px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .navlinks{
+    display: none;
+  }
+  .navbar-mobile{
+    padding: 0;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
