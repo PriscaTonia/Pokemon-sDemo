@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Articles from './components/Articles'
-
+import Profile from './components/Profile'
 
 class App extends Component {
 
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Articles />
-                
+        <Profile />        
       </div>
 
     );

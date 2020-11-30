@@ -15,11 +15,9 @@ const Articles = () => {
     }, 3000)
        
         return(
-            <div className='container'>
+            <div className=' articles'>
                 <h1 className='text-center py-2'>Articles</h1>
                    
-               
-
                 {articles && articles.map(article =>{
                     return(
                     <div className='card p-2' key={article.id}>

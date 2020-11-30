@@ -18,6 +18,17 @@
     height: 20px;
     margin-bottom: 15px;
 }
+.skeleton-profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.skeleton.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
 .skeleton-wrapper{
     margin: 20px auto;
     padding: 10px 15px;
